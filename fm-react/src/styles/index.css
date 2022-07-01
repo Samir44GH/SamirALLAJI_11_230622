@@ -1,0 +1,10 @@
+@import url("normalize.css");
+@import url("layout/settings.css");
+@import url("layout/navigation.css");
+@import url("layout/logo.css");
+@import url("layout/footer.css");
+@import url("pageHome/body1.css");
+@import url("pageHome/body2.css");
+@import url("pageAbout/about.css");
+@import url("pageAbout/section2.css");
+@import url("pageError/error.css");

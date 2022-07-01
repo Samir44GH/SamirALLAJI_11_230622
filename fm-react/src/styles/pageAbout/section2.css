@@ -1,0 +1,12 @@
+.imgAbout {
+  /* Background */
+
+  position: absolute;
+  width: 336px;
+  height: 223px;
+  left: 20px;
+  top: 84px;
+
+  background: #f7f7f7;
+  border-radius: 10px;
+}

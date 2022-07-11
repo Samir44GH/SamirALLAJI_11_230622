@@ -1,0 +1,18 @@
+.sectionInfosDivTitle {
+  height: 46px;
+  width: 335px;
+  left: 20px;
+  top: 364px;
+  border-radius: nullpx;
+}
+
+.sectionInfosTitle,
+.sectionInfosLocation {
+  font-family: Montserrat;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 26px;
+  line-height: 143%;
+  color: black;
+  vertical-align: Bottom;
+}

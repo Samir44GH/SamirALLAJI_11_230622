@@ -1,18 +1,24 @@
 .locationList {
-  position: absolute;
+  /* position: absolute;
   width: 335px;
   height: 350rem;
-  top: 13%;
+  top: 13%; */
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 1.5rem; */
   border-radius: 0px;
+  margin: auto;
+  margin-top: 5%;
 }
 
 .locationCards {
   position: relative;
   width: 335px;
   height: 255px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   border-spacing: 0 1rem;
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
+  margin-bottom: 1.2rem;
 }
 
 .locationCards:hover {
@@ -87,3 +93,49 @@
   top: 76.73%;
   bottom: 5.88%;
 } */
+
+@media all and (min-width: 767.9px) {
+  .locationCards {
+    width: 620px;
+    height: 350px;
+    margin-bottom: 1.8rem;
+  }
+  .imgCards {
+    width: 620px;
+    height: 350px;
+  }
+  .infos {
+    height: 350px;
+  }
+  .infosTitle {
+    font-size: 25px;
+  }
+}
+@media all and (min-width: 990.9px) {
+}
+@media all and (min-width: 1200px) {
+  .locationList {
+    flex-wrap: wrap;
+    width: 1240px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: #f7f7f7;
+    border-radius: 25px;
+    padding: 1.7rem 0;
+  }
+  .locationCards {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    margin: 1.5rem 1.7rem;
+  }
+  .imgCards {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+  }
+  .infos {
+    height: 340px;
+  }
+}

@@ -1,0 +1,158 @@
+.section1 {
+  margin: 8% 5%;
+}
+
+.divBtnArrow {
+  height: 30px;
+  width: 335px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.buttonDropDown {
+  border-color: transparent;
+  margin-top: 3%;
+  margin: auto;
+  background: #ff6060;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 142.6%;
+  height: 30px;
+  width: 335px;
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.btnArrow {
+  border-radius: 5px;
+  z-index: 100;
+  color: white;
+  position: absolute;
+  right: 8%;
+}
+
+.fa-chevron-down {
+  width: 1rem;
+}
+
+.disappear {
+  display: none;
+}
+
+/* icone chevron */
+#btnSection1a #btnSection1b #btnSection1c #btnSection1d.fasa .fasb .fasc .fasd {
+  pointer-events: none;
+  margin-right: 5%;
+  z-index: 2;
+}
+.rotate {
+  padding-bottom: 0.9%;
+  transition: all 500ms;
+  transform: rotate(180deg);
+}
+
+.aSection1 {
+  background: #f6f6f6;
+  margin: auto;
+  width: 335px;
+  left: 0px;
+  top: 24.230712890625px;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+.textSection1 {
+  margin: auto;
+  height: 100%;
+  width: 93%;
+  padding: 1.125em 0.5em 3.32em 0.6em;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 142.6%;
+  color: #ffffff;
+  border-radius: 5px;
+  color: #ff6060;
+  background: #f6f6f6;
+}
+
+@media all and (min-width: 767.9px) {
+  .section1 {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 8%;
+  }
+  .divBtnArrow {
+    width: 620px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .buttonDropDown {
+    width: 620px;
+    font-size: 20px;
+    height: 40px;
+  }
+  .btnArrow {
+    height: 2rem;
+    right: 12%;
+    display: flex;
+    align-items: center;
+    /* margin: auto; */
+    padding-bottom: 0;
+  }
+  .fa-chevron-down {
+    height: 1.4rem;
+    width: 2rem;
+  }
+
+  .aSection1 {
+    width: 620px;
+    margin-bottom: 0;
+  }
+  .textSection1 {
+    font-size: 17px;
+  }
+}
+@media all and (min-width: 990.9px) {
+}
+
+@media all and (min-width: 1200px) {
+  .section1 {
+    width: 1024px;
+  }
+  .divBtnArrow {
+    width: 1023px;
+    margin-top: 5%;
+    height: 47px;
+  }
+  .buttonDropDown {
+    width: 1023px;
+    height: 47px;
+    font-size: 24px;
+    padding-left: 2%;
+  }
+  .btnArrow {
+    right: 16%;
+  }
+  .aSection1 {
+    width: 1024px;
+  }
+  .textSection1 {
+    font-size: 24px;
+    width: 95%;
+    padding: 2% 0;
+  }
+}

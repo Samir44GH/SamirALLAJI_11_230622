@@ -1,16 +1,25 @@
 .bodyHome {
   /* _Body */
 
-  position: absolute;
+  /* position: absolute;
   width: 336px;
   height: 938px;
   left: 20px;
-  top: 83px;
+  top: 83px; */
+  display: flex;
+  flex-direction: column;
+
+  /* margin: auto; */
+  margin-top: 4%;
+  /* justify-content: space-around; */
 }
 .sectionSlogan {
-  position: absolute;
-  width: 335px;
+  /* position: absolute;
+  width: 335px; */
+  margin: auto;
+  display: flex;
   height: 111px;
+  width: 335px;
   mix-blend-mode: darken;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -22,13 +31,13 @@
   height: 48px;
   width: 217px;
   left: 36px;
-  top: 114px;
+  /* top: 114px; */
   border-radius: nullpx;
-  position: absolute;
+  position: relative;
   left: 5.6%;
-  right: 32.53%;
+  /* right: 32.53%; */
   top: 14.04%;
-  bottom: 80.05%;
+  /* bottom: 80.05%; */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -47,4 +56,47 @@
   mix-blend-mode: darken;
   /* opacity: 0.3; */
   border-radius: 10px;
+}
+
+@media all and (min-width: 767.9px) {
+  .bodyHome {
+    justify-content: center;
+  }
+  .sectionSlogan {
+    width: 620px;
+    height: 200px;
+  }
+  .sloganImg {
+    width: 620px;
+    height: 200px;
+  }
+  .sloganTitle {
+    height: 87px;
+    top: 16%;
+    left: 6%;
+    width: 368px;
+    font-size: 40px;
+  }
+}
+
+@media all and (min-width: 990.9px) {
+}
+@media all and (min-width: 1200px) {
+  .sectionSlogan {
+    width: 1240px;
+    height: 223px;
+  }
+  .sloganImg {
+    width: 1240px;
+    height: 223px;
+    object-fit: cover;
+    /* background: url(IMGo.png); */
+  }
+  .sloganTitle {
+    width: 705px;
+    height: 68px;
+    font-size: 48px;
+    top: 17%;
+    left: 23%;
+  }
 }

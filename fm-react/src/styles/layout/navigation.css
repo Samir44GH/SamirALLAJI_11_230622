@@ -8,13 +8,8 @@
   left: 20px;
   top: 20px;
   border-radius: 0px;
-  /* _Header-m */
-
-  position: absolute;
+  margin: auto;
   width: 335px;
-  height: 47px;
-  left: 20px;
-  top: 20px;
 }
 
 .navigation {
@@ -67,4 +62,73 @@
 
 .nav-active {
   border-bottom: 1px solid#ff6060;
+}
+
+@media all and (min-width: 767.9px) {
+  .headerLogNav {
+    align-items: center;
+    width: 620px;
+    justify-content: center;
+    height: 74px;
+    align-self: center;
+  }
+  .navigation {
+    flex: 2;
+    height: 100%;
+  }
+  #navigationUlAccueil {
+    height: 25px;
+    width: 89px;
+  }
+  #navigationUlAbout {
+    width: 120px;
+    height: 25px;
+  }
+  .navigationUlTitle {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 990.9px) {
+}
+@media all and (min-width: 1200px) {
+  .headerLogNav {
+    width: 1240px;
+    height: 68px;
+    justify-content: space-between;
+  }
+  .navigation {
+    width: 350px;
+
+    display: flex;
+    align-items: center;
+    flex: none;
+  }
+  .navigationUl {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin: auto;
+  }
+
+  #navigationUlAccueil {
+    width: 121px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+  }
+  .navigationUlTitle {
+    font-size: 34px;
+    text-transform: capitalize;
+  }
+  #navigationUlAbout {
+    display: flex;
+    align-items: center;
+    height: 37px;
+    width: 155px;
+  }
+  .nav-active {
+    border-bottom: 2px solid#ff6060;
+  }
 }

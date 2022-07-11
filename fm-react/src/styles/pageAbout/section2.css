@@ -1,12 +1,42 @@
+.section2 {
+  width: 336px;
+  height: 223px;
+  margin: auto;
+  margin-top: 6%;
+}
+
 .imgAbout {
   /* Background */
 
-  position: absolute;
   width: 336px;
   height: 223px;
-  left: 20px;
-  top: 84px;
 
   background: #f7f7f7;
   border-radius: 10px;
+}
+
+@media all and (min-width: 767.9px) {
+  .section2 {
+    width: 620px;
+    margin: 4% 9%;
+  }
+
+  .imgAbout {
+    height: 254px;
+    width: 620px;
+  }
+}
+@media all and (min-width: 990.9px) {
+}
+
+@media all and (min-width: 1200px) {
+  .section2 {
+    width: 1240px;
+    height: 223px;
+  }
+  .imgAbout {
+    height: 223px;
+    width: 1240px;
+    object-fit: cover;
+  }
 }

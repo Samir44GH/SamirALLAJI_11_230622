@@ -5,8 +5,9 @@ import CardsLocation from "./CardsLocation";
 const Body2 = () => {
   const [data, setData] = useState([]);
   //Le UseEffect() se jour lorsque le composant est appelé
-  useEffect(() => {}, []);
-  axios.get("./logements.json").then((res) => setData(res.data));
+  useEffect(() => {
+    axios.get("./logements.json").then((res) => setData(res.data));
+  }, []);
 
   return (
     <section className="locationList">

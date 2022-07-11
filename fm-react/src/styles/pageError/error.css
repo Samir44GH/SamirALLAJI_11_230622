@@ -12,57 +12,87 @@
 
 .number {
   /* 404 */
-
   display: flex;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
   line-height: 142.6%;
-
-  /* or 137px */
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #ff6060;
 }
 
 .numberText {
   /* Oups! La page que vous demandez n'existe pas. */
-
   display: flex;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
-
-  /* or 26px */
   display: flex;
   align-items: flex-end;
   text-align: center;
-
   color: #ff6060;
 }
 
 .navigationAccueilError {
   /* Retourner sur la page d’accueil */
-
   display: flex;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 142.6%;
-
-  /* identical to box height, or 20px */
   display: flex;
   align-items: flex-end;
   text-decoration-line: underline;
-
   color: #ff6060;
+}
+
+@media all and (min-width: 767.9px) {
+  .mainError {
+    margin: 10% 8%;
+  }
+  .number {
+    margin: auto;
+  }
+  .numberText {
+    margin: auto;
+    margin-top: 5%;
+  }
+  .navigationAccueilError {
+    margin: auto;
+    margin-top: 7%;
+  }
+}
+
+@media all and (min-width: 990.9px) {
+}
+@media all and (min-width: 1200px) {
+  .number {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ff6060;
+  }
+  .numberText {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+  }
+  .navigationAccueilError {
+    font-weight: 500;
+    line-height: 142.6%;
+  }
+  .navigationUlTitleAccueil {
+    font-size: 18px;
+  }
 }

@@ -2,13 +2,13 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <div>
+    <section className="section2">
       <img
         src="./images/imgAbout.png"
         alt=" Photo_de_montagne "
         className="imgAbout"
       />
-    </div>
+    </section>
   );
 };
 

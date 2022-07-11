@@ -1,18 +1,28 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./pages/About";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
+import Location from "./pages/Location";
+import About from "./pages/About";
 import Error from "./pages/Error";
+
+// import axios from "axios";
 // import AffichHello from "./component/AffichHello";
 //Création d'un composant qui est une fonction
 const App = () => {
+  // const [data, setData] = useState([]);
+
   //La fonction va retourner un return
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home/:id" element={<Location />} /> */}
+        <Route path="/location/:id" element={<Location />} />
         <Route path="/about" element={<About />} />
+        {/* //path="*" fonctionne si jamais l'url ne correspond à aucune page et redirige vers la page Error// */}
         <Route path="*" element={<Error />} />
+        <Route path="/Error" element={<Error />} />
       </Routes>
     </BrowserRouter>
 

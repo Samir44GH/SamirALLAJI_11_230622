@@ -5,3 +5,26 @@
   top: 0px;
   border-radius: 0px;
 }
+
+@media all and (min-width: 767.9px) {
+  .logoDiv {
+    flex: 2;
+  }
+  .logo {
+    height: 66px;
+    width: 188px;
+  }
+}
+
+@media all and (min-width: 990.9px) {
+}
+
+@media all and (min-width: 1200px) {
+  .logoDiv {
+    flex: none;
+  }
+  .logo {
+    width: 210.32px;
+    height: 68px;
+  }
+}

@@ -1,18 +1,295 @@
-.sectionInfosDivTitle {
-  height: 46px;
+.mainLocation {
+  display: flex;
+  justify-content: center;
+}
+.infosLogement {
+  /* height: 46px; */
   width: 335px;
-  left: 20px;
+  /* left: 20px;
   top: 364px;
-  border-radius: nullpx;
+  border-radius: nullpx; */
 }
 
-.sectionInfosTitle,
-.sectionInfosLocation {
+.infosTitleLoc {
   font-family: Montserrat;
   font-style: Medium;
   font-size: 18px;
   line-height: 26px;
   line-height: 143%;
-  color: black;
+  color: #ff6060;
   vertical-align: Bottom;
+  width: 335px;
+  height: 46px;
+}
+.infosLocation {
+  font-family: Montserrat;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  line-height: 143%;
+  vertical-align: Bottom;
+  fill: Solid;
+  color: #ff6060;
+  height: 22px;
+  width: 323px;
+}
+
+.infosTag {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0%;
+  list-style: none;
+}
+
+.tags {
+  align-items: center;
+  width: 84px;
+  height: 18px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  margin-right: 0.625rem;
+}
+
+.infosRN {
+  display: flex;
+  justify-content: space-between;
+  width: 335px;
+  align-items: center;
+}
+
+.infosHost {
+  display: flex;
+  justify-content: space-between;
+  width: 136px;
+  height: 33px;
+}
+
+.infosHostName {
+  height: 33px;
+  width: 93px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #ff6060;
+  padding: 0px 11px;
+  margin: auto;
+}
+
+.infosHostPicture {
+  height: 32px;
+  width: 32px;
+  left: 103.5px;
+  top: 0.5px;
+  border-radius: 0px;
+  border-radius: 150px;
+}
+
+.disappear {
+  display: none;
+}
+
+.divBtnArrowLog {
+  height: 30px;
+  width: 335px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+}
+.buttonDropDownLog {
+  border-color: transparent;
+  margin-top: 3%;
+  margin: auto;
+  background: #ff6060;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 142.6%;
+  height: 30px;
+  width: 335px;
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.btnArrowL,
+.btnArrowM {
+  border-radius: 5px;
+  z-index: 100;
+  color: white;
+  position: absolute;
+  right: 8%;
+}
+
+/* icone chevron */
+#btnSectionInfosa #btnSectionInfosb .fasl .fasm {
+  pointer-events: none;
+  margin-right: 5%;
+  z-index: 2;
+}
+.rotate {
+  padding-bottom: 0.9%;
+  transition: all 500ms;
+  transform: rotate(180deg);
+}
+
+.aSectionInfos {
+  background: #f6f6f6;
+  margin: auto;
+  width: 335px;
+  left: 0px;
+  top: 24.230712890625px;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+.textEquipments {
+  padding: 1%;
+}
+
+@media all and (min-width: 1200px) {
+  .mainLocation {
+    width: 1240px;
+    margin: auto;
+  }
+
+  .sectionInfos {
+    width: 100%;
+  }
+
+  .infosLogement {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infosTitleLoc {
+    width: 635px;
+    font-size: 36px;
+    height: 51px;
+    line-height: 52px;
+  }
+
+  .infosLocation {
+    width: 209px;
+    height: 26px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .tags {
+    width: 115px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .infosRN {
+    width: 1240px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .infosRating {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .infosHost {
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .infosHostName {
+    height: 52px;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .infosHostPicture {
+    width: 64px;
+    height: 64px;
+  }
+
+  .dropDownLog {
+    display: flex;
+  }
+  .divBtnArrowLog {
+    width: 620px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    margin-top: 0;
+  }
+
+  .DD2 {
+    flex-direction: column;
+    display: flex;
+    /* align-self: flex-end; */
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+  }
+  .buttonDropDownLog {
+    width: 582px;
+    height: 52px;
+    margin-top: 0%;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .flexE {
+    justify-content: flex-end;
+  }
+
+  .btnArrowL {
+    height: 2rem;
+    right: unset;
+    left: 44%;
+
+    display: flex;
+    align-items: center;
+    /* margin: auto; */
+    padding-bottom: 0;
+  }
+
+  .btnArrowM {
+    height: 2rem;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    /* margin: auto; */
+    padding-bottom: 0;
+  }
+
+  .aSectionInfos {
+    width: 582px;
+    padding: 2rem 0rem;
+    margin: 0%;
+  }
+  .textSectionLog {
+    height: auto;
+  }
+  .textEquipments {
+    padding: 0.5%;
+  }
 }

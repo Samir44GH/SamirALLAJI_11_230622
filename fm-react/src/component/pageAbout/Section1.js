@@ -161,7 +161,7 @@ const Section1 = () => {
           onClick={textVisiblea}
         >
           <img
-            src="./images/vector.png"
+            src="http://localhost:3000/images/vector.png"
             className="fa-chevron-down"
             alt="flèche dirigée vers le haut"
           />
@@ -184,7 +184,7 @@ const Section1 = () => {
           onClick={textVisibleb}
         >
           <img
-            src="./images/vector.png"
+            src="http://localhost:3000/images/vector.png"
             className="fa-chevron-down"
             alt="flèche dirigée vers le haut"
           />
@@ -206,7 +206,7 @@ const Section1 = () => {
           onClick={textVisiblec}
         >
           <img
-            src="./images/vector.png"
+            src="http://localhost:3000/images/vector.png"
             className="fa-chevron-down"
             alt="flèche dirigée vers le haut"
           />
@@ -228,7 +228,7 @@ const Section1 = () => {
           onClick={textVisibled}
         >
           <img
-            src="./images/vector.png"
+            src="http://localhost:3000/images/vector.png"
             className="fa-chevron-down"
             alt="flèche dirigée vers le haut"
           />

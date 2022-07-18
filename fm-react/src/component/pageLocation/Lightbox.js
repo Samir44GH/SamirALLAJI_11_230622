@@ -2,11 +2,14 @@ import React from "react";
 
 const Lightbox = ({ location }) => {
   return (
-    <div>
-      <div className="lightBox">
-        {/* <h2 className="sectionINfosTitle">{location.title}</h2>
-        <h3 className="infosLocation">{location.location} </h3> */}
-      </div>
+    <div className="lightBox">
+      {/* <ul className="sectionInfosTag">
+        {location.tags.map((tag, index) => (
+          <li className="infosTags" key={index}>
+            {tag}
+          </li>
+        ))}
+      </ul> */}
     </div>
   );
 };

@@ -1,13 +1,57 @@
 .mainLocation {
   display: flex;
   justify-content: center;
+  margin: 1em 0em;
+  flex-direction: column;
 }
-.infosLogement {
-  /* height: 46px; */
+
+.caroussel {
   width: 335px;
-  /* left: 20px;
-  top: 364px;
-  border-radius: nullpx; */
+  height: 255px;
+  display: flex;
+  margin: auto;
+}
+
+.carousselPic {
+  height: 255px;
+  width: 335px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.vue {
+  display: block;
+  object-fit: cover;
+}
+
+.nvue {
+  display: none;
+}
+.arrowF {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 46%;
+  left: 91%;
+  z-index: 100;
+  color: #f6f6f6;
+  opacity: 87%;
+}
+
+.arrowB {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 46%;
+  right: 5%;
+  z-index: 100;
+  color: #f6f6f6;
+  opacity: 87%;
+}
+
+.infosLogement {
+  width: 335px;
+  margin: auto;
 }
 
 .infosTitleLoc {
@@ -41,21 +85,29 @@
   list-style: none;
 }
 
-.tags {
-  align-items: center;
-  width: 84px;
+.containerTags {
   height: 18px;
-  border-radius: 5px;
+  width: 84px;
   background-color: #ff6060;
-  display: flex;
+  border-radius: 5px;
+  align-items: center;
   justify-content: center;
+  display: flex;
+  margin-right: 0.625rem;
+}
+.tags {
+  height: 14px;
+  width: 65px;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: 0em;
-  margin-right: 0.625rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 
 .infosRN {
@@ -74,7 +126,7 @@
 
 .infosHostName {
   height: 33px;
-  width: 93px;
+  width: 53px;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 500;
@@ -84,6 +136,7 @@
   color: #ff6060;
   padding: 0px 11px;
   margin: auto;
+  margin-right: 0%;
 }
 
 .infosHostPicture {
@@ -138,6 +191,19 @@
   right: 8%;
 }
 
+/*RATING*/
+.infosRating {
+  width: 98px;
+  height: 18px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.starImg {
+  width: 15px;
+  height: 15px;
+}
+
 /* icone chevron */
 #btnSectionInfosa #btnSectionInfosb .fasl .fasm {
   pointer-events: none;
@@ -150,6 +216,13 @@
   transform: rotate(180deg);
 }
 
+.inrotate {
+  padding-bottom: 0.9%;
+  transition: all 500ms;
+  transform: rotate(360deg);
+}
+
+/*Texte*/
 .aSectionInfos {
   background: #f6f6f6;
   margin: auto;
@@ -158,19 +231,319 @@
   top: 24.230712890625px;
   border-radius: 5px;
   margin-bottom: 5%;
+  padding-top: 15px;
 }
 .textEquipments {
   padding: 1%;
+  line-height: 10px;
+}
+@media all and (min-width: 767.9px) {
+  .caroussel {
+    width: 740px;
+    height: 215px;
+    border-radius: 25px;
+  }
+
+  .carousselPic {
+    width: 740px;
+    height: 215px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  .btnArrowL {
+    border-radius: 5px;
+    z-index: 100;
+    color: white;
+    position: absolute;
+    right: inherit;
+    left: 82%;
+  }
+  .btnArrowM {
+    border-radius: 5px;
+    z-index: 100;
+    color: white;
+    position: absolute;
+    right: inherit;
+    left: 82%;
+  }
+  .divBtnArrowLog {
+    width: 420px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .buttonDropDownLog {
+    width: 420px;
+    font-size: 20px;
+    height: 30px;
+  }
+  .rotate,
+  .inrotate {
+    padding-bottom: 0;
+  }
+
+  .arrowB,
+  .arrowF {
+    width: 4em;
+    height: 5.5em;
+    top: 33%;
+  }
+  .arrowF {
+    left: 89%;
+  }
+  .arrowB {
+    right: 7%;
+  }
+
+  .dropDownLog {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 8%;
+  }
+
+  .divBtnArrowLog,
+  .buttonDropDownLog {
+    width: 620px;
+  }
+
+  .aSectionInfos {
+    width: 620px;
+    margin-bottom: 0;
+  }
+
+  .infosLogement {
+    width: 725px;
+  }
+
+  .infosTitleLoc {
+    width: 725px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .infosLocation {
+    width: 725px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .infosRN {
+    display: flex;
+    justify-content: center;
+    width: 725px;
+    align-items: center;
+  }
+  .containerTags {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .infosTag {
+    display: flex;
+    justify-content: center;
+    margin: 4% 0 3% 0;
+  }
+  .tags {
+    font-size: 15px;
+    width: 99px;
+  }
+  .infosRating {
+    width: 135px;
+  }
+  .infosHost {
+    width: 210px;
+  }
+  .infosHostName {
+    font-size: 20px;
+    margin-right: 0%;
+  }
+
+  .infosHostPicture {
+    height: 40px;
+    width: 40px;
+  }
+  .starImg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btnArrowL,
+  .btnArrowM {
+    left: 84%;
+    right: inherit;
+    padding-top: 3px;
+  }
+  .menuDD {
+    margin-top: 2%;
+  }
+
+  .divBtnArrowLog {
+    margin-top: 1%;
+  }
+
+  .dropDownLog {
+    margin-bottom: 4%;
+  }
+
+  .fa-chevron-down {
+    height: 1rem;
+    width: 1.5rem;
+  }
+}
+
+@media all and (min-width: 990.9px) {
+  .caroussel {
+    width: 850px;
+    height: 315px;
+    border-radius: 25px;
+  }
+
+  .carousselPic {
+    width: 850px;
+    height: 315px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .arrowF {
+    left: 88%;
+    top: 37%;
+  }
+  .arrowB {
+    right: 3%;
+    top: 37%;
+  }
+  .btnArrowL {
+    border-radius: 5px;
+    z-index: 100;
+    color: white;
+    position: absolute;
+
+    left: 90%;
+  }
+  .btnArrowM {
+    border-radius: 5px;
+    z-index: 100;
+    color: white;
+    position: absolute;
+    right: inherit;
+    left: 44%;
+  }
+  .infosLogement {
+    width: 925px;
+  }
+
+  .infosTitleLoc {
+    width: 925px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .infosLocation {
+    width: 925px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .infosRN {
+    display: flex;
+    justify-content: center;
+    width: 925px;
+    align-items: center;
+  }
+  .containerTags {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .infosTag {
+    display: flex;
+    justify-content: center;
+    margin: 4% 0 3% 0;
+  }
+  .tags {
+    font-size: 15px;
+    width: 99px;
+  }
+  .infosRating {
+    width: 135px;
+  }
+  .infosHost {
+    width: 210px;
+  }
+  .infosHostName {
+    font-size: 20px;
+    margin-right: 0%;
+  }
+
+  .infosHostPicture {
+    height: 40px;
+    width: 40px;
+  }
+  .starImg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btnArrowL,
+  .btnArrowM {
+    left: 75%;
+    right: inherit;
+    padding-top: 29px;
+  }
+  .rotate {
+    padding-bottom: 35px;
+  }
+  .inrotate {
+    padding-top: 12px;
+  }
+  .menuDD {
+    margin-top: 2%;
+  }
+
+  .divBtnArrowLog {
+    margin-top: 1%;
+  }
+  .buttonDropDownLog {
+    height: 40px;
+  }
+  .dropDownLog {
+    margin-bottom: 4%;
+  }
 }
 
 @media all and (min-width: 1200px) {
   .mainLocation {
     width: 1240px;
     margin: auto;
+    margin-top: 2%;
   }
 
+  .caroussel {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+  }
+
+  .carousselPic {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .vue {
+    object-fit: cover;
+  }
   .sectionInfos {
     width: 100%;
+    margin-bottom: 1rem;
   }
 
   .infosLogement {
@@ -179,24 +552,40 @@
     justify-content: space-between;
   }
 
+  .infos1 {
+    display: flex;
+    flex-direction: column;
+  }
   .infosTitleLoc {
-    width: 635px;
+    width: 935px;
     font-size: 36px;
     height: 51px;
     line-height: 52px;
+    margin: 3% 0% 0 0;
+    justify-content: left;
   }
 
   .infosLocation {
-    width: 209px;
+    width: 309px;
     height: 26px;
     font-size: 18px;
     line-height: 26px;
+    margin: 1% 0%;
+    justify-content: flex-start;
   }
-
+  .containerTags {
+    height: 25px;
+    width: 115px;
+    border-radius: 10px;
+  }
+  .infosTag {
+    justify-content: left;
+    margin: 1% 0%;
+  }
   .tags {
     width: 115px;
     height: 25px;
-    line-height: 20px;
+    line-height: 25px;
     font-size: 14px;
   }
 
@@ -209,6 +598,8 @@
   .infosRating {
     display: flex;
     align-self: flex-end;
+    width: 186px;
+    height: 20px;
   }
 
   .infosHost {
@@ -218,20 +609,32 @@
     width: 100%;
   }
 
+  .starImg {
+    width: 30px;
+    height: 30px;
+  }
+
   .infosHostName {
     height: 52px;
     font-size: 18px;
     line-height: 26px;
-    margin: 0;
+    margin-right: 0%;
+    width: 90px;
   }
 
   .infosHostPicture {
     width: 64px;
     height: 64px;
   }
-
+  .menuDD {
+    display: flex;
+    margin: auto;
+    margin-top: 2.5%;
+  }
   .dropDownLog {
     display: flex;
+    margin: auto;
+    margin-top: 0;
   }
   .divBtnArrowLog {
     width: 620px;
@@ -239,14 +642,11 @@
     display: flex;
     align-items: center;
     margin: 0%;
-    margin-top: 0;
   }
 
   .DD2 {
     flex-direction: column;
     display: flex;
-    /* align-self: flex-end; */
-    /* justify-content: flex-end; */
     align-items: flex-end;
   }
   .buttonDropDownLog {
@@ -255,41 +655,71 @@
     margin-top: 0%;
     margin: 0;
     font-size: 18px;
+    border-radius: 10px;
+  }
+  .btnArrowL {
+    border-radius: 5px;
+    z-index: 100;
+    color: white;
+    position: absolute;
+    left: 90%;
+  }
+  .btnArrowM {
+    border-radius: 5px;
+    z-index: 100;
+    color: white;
+    position: absolute;
+    right: inherit;
+    left: 44%;
+  }
+  .btnArrowL,
+  .btnArrowM {
+    padding-top: 5px;
   }
 
+  .rotate {
+    padding-bottom: 5px;
+  }
+  .flexC {
+    display: flex;
+    flex-direction: column;
+  }
   .flexE {
     justify-content: flex-end;
-  }
-
-  .btnArrowL {
-    height: 2rem;
-    right: unset;
-    left: 44%;
-
-    display: flex;
-    align-items: center;
-    /* margin: auto; */
-    padding-bottom: 0;
-  }
-
-  .btnArrowM {
-    height: 2rem;
-    right: 8%;
-    display: flex;
-    align-items: center;
-    /* margin: auto; */
-    padding-bottom: 0;
+    align-self: flex-end;
   }
 
   .aSectionInfos {
     width: 582px;
     padding: 2rem 0rem;
     margin: 0%;
+    padding-top: 2rem;
   }
   .textSectionLog {
     height: auto;
   }
+
+  .textDescription {
+    line-height: 26px;
+    font-size: 18px;
+    padding: 1%;
+  }
   .textEquipments {
-    padding: 0.5%;
+    line-height: 10px;
+    font-size: 18px;
+    padding-top: 12px;
+  }
+
+  .arrowB,
+  .arrowF {
+    width: 6em;
+    height: 7.5em;
+    top: 39%;
+  }
+  .arrowF {
+    left: 90%;
+  }
+  .arrowB {
+    right: 5%;
   }
 }

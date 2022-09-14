@@ -13,6 +13,7 @@
 
   background: #f7f7f7;
   border-radius: 10px;
+  background: url(http://localhost:3000/images/imgAbout.png);
 }
 
 @media all and (min-width: 767.9px) {
@@ -22,21 +23,45 @@
   }
 
   .imgAbout {
-    height: 254px;
+    height: 223px;
     width: 620px;
+    background: url(http://localhost:3000/images/AP1440.jpg);
+    object-fit: cover;
   }
 }
 @media all and (min-width: 990.9px) {
+  .section1 {
+    margin-bottom: 0%;
+  }
+  .section2 {
+    width: 920px;
+    margin: auto;
+    margin-top: 4%;
+    height: 220px;
+  }
+  .imgAbout {
+    background: url(http://localhost:3000/images/AP1440.jpg);
+    width: 900px;
+    margin: auto;
+    object-fit: cover;
+    height: 224px;
+  }
 }
 
 @media all and (min-width: 1200px) {
+  .section1 {
+    margin-bottom: 0%;
+  }
   .section2 {
     width: 1240px;
     height: 223px;
+    margin: auto;
+    margin-top: 4%;
   }
   .imgAbout {
     height: 223px;
     width: 1240px;
     object-fit: cover;
+    background: url(http://localhost:3000/images/AP1440.jpg);
   }
 }

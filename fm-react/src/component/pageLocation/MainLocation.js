@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Lightbox from "./Lightbox";
+import Caroussel from "./Caroussel";
 import SectionInfos from "./SectionInfos";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -35,7 +35,7 @@ const MainLocation = () => {
       {data.length > 0 ? (
         <>
           {data.map((location) => (
-            <Lightbox key={location.id} location={location} />
+            <Caroussel key={location.id} location={location} />
           ))}
           {data.map((location) => (
             <SectionInfos key={location.id} location={location} />

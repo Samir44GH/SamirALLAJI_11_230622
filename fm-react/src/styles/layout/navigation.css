@@ -13,7 +13,7 @@
 }
 
 .navigation {
-  width: 100%;
+  width: 55%;
 }
 
 .navigationUl {
@@ -67,7 +67,7 @@
 @media all and (min-width: 767.9px) {
   .headerLogNav {
     align-items: center;
-    width: 620px;
+    width: 700px;
     justify-content: center;
     height: 74px;
     align-self: center;
@@ -83,13 +83,23 @@
   #navigationUlAbout {
     width: 120px;
     height: 25px;
+    font-weight: 700;
   }
   .navigationUlTitle {
     font-size: 20px;
+    font-weight: 700;
   }
 }
 
 @media all and (min-width: 990.9px) {
+  .headerLogNav {
+    width: 850px;
+  }
+  .navigation {
+    width: 320px;
+
+    flex: none;
+  }
 }
 @media all and (min-width: 1200px) {
   .headerLogNav {
@@ -105,7 +115,7 @@
     flex: none;
   }
   .navigationUl {
-    width: 100%;
+    width: 95%;
     display: flex;
     padding: 0;
     align-items: center;
@@ -113,20 +123,21 @@
   }
 
   #navigationUlAccueil {
-    width: 121px;
+    width: 110px;
     height: 37px;
     display: flex;
     align-items: center;
   }
   .navigationUlTitle {
-    font-size: 34px;
+    font-weight: 700;
+    font-size: 30px;
     text-transform: capitalize;
   }
   #navigationUlAbout {
     display: flex;
     align-items: center;
     height: 37px;
-    width: 155px;
+    width: 135px;
   }
   .nav-active {
     border-bottom: 2px solid#ff6060;

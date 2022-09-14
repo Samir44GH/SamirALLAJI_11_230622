@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const CardsLocation = ({ location }) => {
@@ -11,20 +10,6 @@ const CardsLocation = ({ location }) => {
   const goToLocation = (id) => {
     navigate(`/location/${id}`);
   };
-
-  // const [data, setData] = useState([1]);
-  // const { id } = useParams();
-
-  // useEffect(() => {
-  //   console.log(id);
-  //   axios.get("http://localhost:3000/logements.json").then((res) => {
-  //     setData(res.data.filter((location) => location.id === id));
-  //     console.clear();
-  //     console.log(res.data);
-  //   }, []);
-  // });
-
-  //Le UseEffect() se jour lorsque le composant est appelé
 
   return (
     <article

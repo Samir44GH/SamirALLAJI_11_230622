@@ -41,6 +41,7 @@
 @media all and (min-width: 767.9px) {
   .footerGlobal {
     width: 768px;
+    margin-top: 5%;
   }
   .footerImg {
     width: 12rem;
@@ -52,10 +53,15 @@
   }
 }
 @media all and (min-width: 990.9px) {
+  .footerGlobal {
+    width: 1024px;
+    margin-top: 3%;
+  }
 }
 @media all and (min-width: 1200px) {
   .footerGlobal {
     width: 1440px;
+    margin-top: 3%;
   }
   .footerImg {
     width: 122px;

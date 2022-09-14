@@ -56,6 +56,8 @@
   mix-blend-mode: darken;
   /* opacity: 0.3; */
   border-radius: 10px;
+  background: url(http://localhost:3000/images/IMGboody1-1.jpg);
+  margin: 0;
 }
 
 @media all and (min-width: 767.9px) {
@@ -80,6 +82,12 @@
 }
 
 @media all and (min-width: 990.9px) {
+  .sloganImg {
+    width: 620px;
+    height: 200px;
+    object-fit: cover;
+    background: url(http://localhost:3000/images/IMGo.png);
+  }
 }
 @media all and (min-width: 1200px) {
   .sectionSlogan {
@@ -90,7 +98,7 @@
     width: 1240px;
     height: 223px;
     object-fit: cover;
-    /* background: url(IMGo.png); */
+    background: url(http://localhost:3000/images/IMGo.png);
   }
   .sloganTitle {
     width: 705px;

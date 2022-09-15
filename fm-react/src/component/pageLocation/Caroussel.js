@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
 const Caroussel = (props) => {
-  useEffect(() => console.log(props.location), []);
+  useEffect(() => console.log(props.location));
   const [imageCur, setImageCur] = useState(0);
 
   //let carousselEl = document.querySelector(".caroussel1");
@@ -35,7 +35,14 @@ const Caroussel = (props) => {
     // hideEl();
 
     setImageCur(
-      [...[Math.abs(1 - (imageCur % props.location?.pictures?.length))]][0]
+      [
+        ...[
+          Math.abs(
+            props.location?.pictures.length -
+              (1 - (imageCur % props.location?.pictures?.length))
+          ),
+        ],
+      ][0]
     );
     console.log(imageCur);
   };

@@ -71,6 +71,7 @@
   .sloganImg {
     width: 620px;
     height: 200px;
+    background: url(http://localhost:3000/images/IMGo.png);
   }
   .sloganTitle {
     height: 87px;

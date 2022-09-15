@@ -4,26 +4,22 @@
   margin: 1em 0em;
   flex-direction: column;
 }
-
 .caroussel {
   width: 335px;
   height: 255px;
   display: flex;
   margin: auto;
 }
-
 .carousselPic {
   height: 255px;
   width: 335px;
   position: absolute;
   border-radius: 10px;
 }
-
 .vue {
   display: block;
   object-fit: cover;
 }
-
 .nvue {
   display: none;
 }
@@ -37,7 +33,6 @@
   color: #f6f6f6;
   opacity: 87%;
 }
-
 .arrowB {
   width: 24px;
   height: 24px;
@@ -48,12 +43,10 @@
   color: #f6f6f6;
   opacity: 87%;
 }
-
 .infosLogement {
   width: 335px;
   margin: auto;
 }
-
 .infosTitleLoc {
   font-family: Montserrat;
   font-style: Medium;
@@ -77,14 +70,12 @@
   height: 22px;
   width: 323px;
 }
-
 .infosTag {
   display: flex;
   justify-content: flex-start;
   padding-left: 0%;
   list-style: none;
 }
-
 .containerTags {
   height: 18px;
   width: 84px;
@@ -109,21 +100,18 @@
   text-overflow: ellipsis;
   text-align: center;
 }
-
 .infosRN {
   display: flex;
   justify-content: space-between;
   width: 335px;
   align-items: center;
 }
-
 .infosHost {
   display: flex;
   justify-content: space-between;
   width: 136px;
   height: 33px;
 }
-
 .infosHostName {
   height: 33px;
   width: 53px;
@@ -138,7 +126,6 @@
   margin: auto;
   margin-right: 0%;
 }
-
 .infosHostPicture {
   height: 32px;
   width: 32px;
@@ -147,11 +134,9 @@
   border-radius: 0px;
   border-radius: 150px;
 }
-
 .disappear {
   display: none;
 }
-
 .divBtnArrowLog {
   height: 30px;
   width: 335px;
@@ -181,7 +166,6 @@
   position: relative;
   color: #ffffff;
 }
-
 .btnArrowL,
 .btnArrowM {
   border-radius: 5px;
@@ -198,7 +182,6 @@
   display: flex;
   justify-content: space-around;
 }
-
 .starImg {
   width: 15px;
   height: 15px;
@@ -215,7 +198,6 @@
   transition: all 500ms;
   transform: rotate(180deg);
 }
-
 .inrotate {
   padding-bottom: 0.9%;
   transition: all 500ms;
@@ -243,7 +225,6 @@
     height: 215px;
     border-radius: 25px;
   }
-
   .carousselPic {
     width: 740px;
     height: 215px;
@@ -272,7 +253,6 @@
     display: flex;
     align-items: center;
   }
-
   .buttonDropDownLog {
     width: 420px;
     font-size: 20px;
@@ -282,7 +262,6 @@
   .inrotate {
     padding-bottom: 0;
   }
-
   .arrowB,
   .arrowF {
     width: 4em;
@@ -295,35 +274,29 @@
   .arrowB {
     right: 7%;
   }
-
   .dropDownLog {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-bottom: 8%;
   }
-
   .divBtnArrowLog,
   .buttonDropDownLog {
     width: 620px;
   }
-
   .aSectionInfos {
     width: 620px;
     margin-bottom: 0;
   }
-
   .infosLogement {
     width: 725px;
   }
-
   .infosTitleLoc {
     width: 725px;
     font-size: 25px;
     display: flex;
     justify-content: center;
   }
-
   .infosLocation {
     width: 725px;
     font-size: 15px;
@@ -360,8 +333,8 @@
   .infosHostName {
     font-size: 20px;
     margin-right: 0%;
+    width: 80px;
   }
-
   .infosHostPicture {
     height: 40px;
     width: 40px;
@@ -370,7 +343,6 @@
     width: 20px;
     height: 20px;
   }
-
   .btnArrowL,
   .btnArrowM {
     left: 84%;
@@ -380,15 +352,12 @@
   .menuDD {
     margin-top: 2%;
   }
-
   .divBtnArrowLog {
     margin-top: 1%;
   }
-
   .dropDownLog {
     margin-bottom: 4%;
   }
-
   .fa-chevron-down {
     height: 1rem;
     width: 1.5rem;
@@ -401,14 +370,12 @@
     height: 315px;
     border-radius: 25px;
   }
-
   .carousselPic {
     width: 850px;
     height: 315px;
     border-radius: 25px;
     object-fit: cover;
   }
-
   .arrowF {
     left: 88%;
     top: 37%;
@@ -422,7 +389,6 @@
     z-index: 100;
     color: white;
     position: absolute;
-
     left: 90%;
   }
   .btnArrowM {
@@ -436,14 +402,12 @@
   .infosLogement {
     width: 925px;
   }
-
   .infosTitleLoc {
     width: 925px;
     font-size: 35px;
     display: flex;
     justify-content: center;
   }
-
   .infosLocation {
     width: 925px;
     font-size: 20px;
@@ -481,7 +445,6 @@
     font-size: 20px;
     margin-right: 0%;
   }
-
   .infosHostPicture {
     height: 40px;
     width: 40px;
@@ -490,25 +453,24 @@
     width: 20px;
     height: 20px;
   }
-
   .btnArrowL,
   .btnArrowM {
     left: 75%;
     right: inherit;
-    padding-top: 29px;
+    /* padding-top: 29px; */
   }
   .rotate {
-    padding-bottom: 35px;
+    padding-bottom: 0px;
   }
   .inrotate {
-    padding-top: 12px;
+    padding-top: 0px;
   }
   .menuDD {
     margin-top: 2%;
   }
-
   .divBtnArrowLog {
     margin-top: 1%;
+    height: 40px;
   }
   .buttonDropDownLog {
     height: 40px;
@@ -524,20 +486,17 @@
     margin: auto;
     margin-top: 2%;
   }
-
   .caroussel {
     width: 1240px;
     height: 415px;
     border-radius: 25px;
   }
-
   .carousselPic {
     width: 1240px;
     height: 415px;
     border-radius: 25px;
     object-fit: cover;
   }
-
   .vue {
     object-fit: cover;
   }
@@ -545,13 +504,11 @@
     width: 100%;
     margin-bottom: 1rem;
   }
-
   .infosLogement {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-
   .infos1 {
     display: flex;
     flex-direction: column;
@@ -564,7 +521,6 @@
     margin: 3% 0% 0 0;
     justify-content: left;
   }
-
   .infosLocation {
     width: 309px;
     height: 26px;
@@ -588,32 +544,27 @@
     line-height: 25px;
     font-size: 14px;
   }
-
   .infosRN {
     width: 1240px;
     flex-direction: column-reverse;
     justify-content: space-between;
   }
-
   .infosRating {
     display: flex;
     align-self: flex-end;
     width: 186px;
     height: 20px;
   }
-
   .infosHost {
     height: 100%;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
   }
-
   .starImg {
     width: 30px;
     height: 30px;
   }
-
   .infosHostName {
     height: 52px;
     font-size: 18px;
@@ -621,7 +572,6 @@
     margin-right: 0%;
     width: 90px;
   }
-
   .infosHostPicture {
     width: 64px;
     height: 64px;
@@ -643,7 +593,6 @@
     align-items: center;
     margin: 0%;
   }
-
   .DD2 {
     flex-direction: column;
     display: flex;
@@ -676,7 +625,6 @@
   .btnArrowM {
     padding-top: 5px;
   }
-
   .rotate {
     padding-bottom: 5px;
   }
@@ -688,7 +636,6 @@
     justify-content: flex-end;
     align-self: flex-end;
   }
-
   .aSectionInfos {
     width: 582px;
     padding: 2rem 0rem;
@@ -698,7 +645,6 @@
   .textSectionLog {
     height: auto;
   }
-
   .textDescription {
     line-height: 26px;
     font-size: 18px;
@@ -709,7 +655,6 @@
     font-size: 18px;
     padding-top: 12px;
   }
-
   .arrowB,
   .arrowF {
     width: 6em;

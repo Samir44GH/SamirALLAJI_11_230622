@@ -7,7 +7,7 @@ import Dropdown from "./DropDown";
 import Dropdown2 from "./DropDown2";
 
 const SectionInfos = (props) => {
-  useEffect(() => console.log(props.location), []);
+  useEffect(() => console.log(props.location));
 
   return (
     <div className="sectionInfos">

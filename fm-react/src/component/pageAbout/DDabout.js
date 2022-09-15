@@ -3,38 +3,6 @@ import React, { useState } from "react";
 const DDabout = ({ dropAbout }) => {
   const [activeDD, setActiveDD] = useState(false);
 
-  const textVisible = () => {
-    //Apparition du menu lorsque le buttonDRop2 apparait
-    if (document.querySelector(".aSection1a").classList.contains("disappear")) {
-      textDDVisible("appear");
-      document
-        .querySelector("#btnSection1a")
-        .setAttribute("aria-expanded", "true");
-    } else {
-      textDDVisible("disappear");
-      document
-        .querySelector("#btnSection1a")
-        .setAttribute("aria-expanded", "false");
-    }
-
-    // Rotation icon FA chevron: ajout/retrait class rotate
-    if (document.querySelector(".fasa").classList.contains("rotate")) {
-      document.querySelector(".fasa").classList.remove("rotate");
-    } else {
-      document.querySelector(".fasa").classList.add("rotate");
-    }
-  };
-
-  const textDDVisible = (e) => {
-    document.querySelector(".aSection1a").classList.contains("disappear");
-
-    if (e === "appear") {
-      document.querySelector(".aSection1a").classList.remove("disappear");
-    } else if (e === "disappear") {
-      document.querySelector(".aSection1a").classList.add("disappear");
-    }
-  };
-
   return (
     <section className="section1">
       <nav className="divBtnArrow">
@@ -62,7 +30,7 @@ const DDabout = ({ dropAbout }) => {
 
         //className="aSection1a aSection1 disappear"
       >
-        <p className="textSection1">{dropAbout.text}</p>
+        <p className="textSection">{dropAbout.text}</p>
       </article>
     </section>
   );

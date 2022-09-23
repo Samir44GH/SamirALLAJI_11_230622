@@ -5,7 +5,7 @@ const Body1 = () => {
     <section className="sectionSlogan">
       
        <img
-        // src="./images/IMGboody1-1.jpg"
+        src="./images/IMGboody1-1.jpg"
     srcSet="./images/IMGo.png 767.9w 1023.9w 1439.9w "
         className="sloganImg"
         alt="Falaises au bord de la mer"

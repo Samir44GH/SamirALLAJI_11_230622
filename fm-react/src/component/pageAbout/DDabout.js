@@ -18,7 +18,7 @@ const DDabout = ({ dropAbout }) => {
           onClick={(e) => setActiveDD(!activeDD)}
         >
           <img
-            src="http://localhost:3000/images/vector.png"
+            src="./images/vector.png"
             className="fa-chevron-down"
             alt="flèche dirigée vers le haut"
           />

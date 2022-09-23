@@ -13,7 +13,7 @@
 
   background: #f7f7f7;
   border-radius: 10px;
-  background: url(http://localhost:3000/images/imgAbout.png);
+  
 }
 
 @media all and (min-width: 767.9px) {
@@ -25,7 +25,7 @@
   .imgAbout {
     height: 223px;
     width: 620px;
-    background: url(http://localhost:3000/images/AP1440.jpg);
+    
     object-fit: cover;
   }
 }
@@ -40,7 +40,7 @@
     height: 220px;
   }
   .imgAbout {
-    background: url(http://localhost:3000/images/AP1440.jpg);
+    
     width: 900px;
     margin: auto;
     object-fit: cover;
@@ -62,6 +62,5 @@
     height: 223px;
     width: 1240px;
     object-fit: cover;
-    background: url(http://localhost:3000/images/AP1440.jpg);
   }
 }

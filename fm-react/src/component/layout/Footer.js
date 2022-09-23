@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footerGlobal">
       <img
         className="footerImg"
-        src="http://localhost:3000/images/LOGOFooter.png"
+        src="./images/LOGOFooter.png"
         alt="Logo Kasa"
       />
       <h5 className="footerText"> © 2020 Kasa. All rights reserved</h5>

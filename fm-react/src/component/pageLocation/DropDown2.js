@@ -18,7 +18,7 @@ const Dropdown2 = ({ DD, title }) => {
             onClick={(e) => setActive1(!active1)}
           >
             <img
-              src="http://localhost:3000/images/vector.png"
+              src="http://localhost:3000/SamirALLAJI_11_230622/images/vector.png"
               className="fa-chevron-down"
               alt="flèche dirigée vers le haut"
             />

@@ -21,7 +21,7 @@ const SectionInfos = (props) => {
        <DDabout title="Description" dropAbout={props.location.description} />
         <DDabout title="Equipements" dropAbout={props.location.equipments} />
       </div>
-      {/* <Dropdown title="Equipements" DD={props.location?.equipments} /> */}
+     
     </div>
   );
 };

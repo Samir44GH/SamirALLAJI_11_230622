@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-const DDabout = ({ dropAbout }) => {
+const DDabout = ({ dropAbout, title }) => {
   const [activeDD, setActiveDD] = useState(false);
 
   return (
     <section className="section1">
       <nav className="divBtnArrow">
         <button className="buttonDropDown contact_button">
-          {dropAbout.title}
+          {title}
         </button>
         <span
           //className="fasa  btnArrow"
@@ -18,7 +18,7 @@ const DDabout = ({ dropAbout }) => {
           onClick={(e) => setActiveDD(!activeDD)}
         >
           <img
-            src="./images/vector.png"
+            src="http://localhost:3000/SamirALLAJI_11_230622/images/vector.png"
             className="fa-chevron-down"
             alt="flèche dirigée vers le haut"
           />
@@ -30,7 +30,7 @@ const DDabout = ({ dropAbout }) => {
 
         //className="aSection1a aSection1 disappear"
       >
-        <p className="textSection">{dropAbout.text}</p>
+        <p className="textSection">{dropAbout}</p>
       </article>
     </section>
   );

@@ -32,7 +32,7 @@ const Section = () => {
   return (
     <div>
       {dropAbouts.map((dropAbout, index) => (
-        <DDabout index={index} dropAbout={dropAbout} />
+        <DDabout index={index}  dropAbout={dropAbout.text} />
       ))}
     </div>
   );

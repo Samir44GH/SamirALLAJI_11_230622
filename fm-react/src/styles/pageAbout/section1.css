@@ -181,7 +181,10 @@
     padding-left: 2%;
   }
   .btnArrow {
-    right: 14%;
+    /* right: 14%; */
+    position: relative;
+    right: 7.1%;
+    width: 0px;
   }
 
   .aSection1 {
@@ -202,12 +205,24 @@
 }
 
 @media all and (min-width: 1200px) {
+  /* .dropAboutCollapse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  } */
+
   .section1 {
-    width: 1024px;
     margin-bottom: 0%;
+    max-width: 1024px;
+    width: 100%;
+  }
+  .DDaboutDiv,
+  .DDaboutDiv2 {
+    width: 49%;
   }
   .divBtnArrow {
-    width: 1023px;
+    /* width: 1023px; */
+    width: 100%;
     margin-top: 5%;
     height: 47px;
   }
@@ -217,15 +232,16 @@
     font-size: 24px;
     padding-left: 2%;
   }
-  .btnArrow {
-    right: 16%;
-  }
+  /* .btnArrow {
+    right: 8%;
+  } */
   .aSection1 {
-    width: 1024px;
+    width: 100%;
   }
 
   .rotate {
     padding-bottom: 0;
+    right: 2.7%;
   }
   .textSection1,
   .textSection {
@@ -234,3 +250,4 @@
     padding: 2% 0;
   }
 }
+

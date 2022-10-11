@@ -460,11 +460,17 @@
     right: inherit;
     /* padding-top: 29px; */
   }
-  .rotate {
+   .rotate {
     padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    right: 5%;
   }
   .inrotate {
     padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    right: 5%;
   }
   .menuDD {
     margin-top: 2%;

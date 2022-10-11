@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const DDabout = ({ dropAbout, title }) => {
+const Collapse = ({ dropAbout, title }) => {
   const [activeDD, setActiveDD] = useState(false);
 
   return (
@@ -28,4 +28,4 @@ const DDabout = ({ dropAbout, title }) => {
   );
 };
 
-export default DDabout;
+export default Collapse;

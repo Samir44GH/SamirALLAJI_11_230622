@@ -218,6 +218,7 @@
 .textEquipments {
   padding: 1%;
   line-height: 10px;
+  margin: 0 2% 0 0;
 }
 @media all and (min-width: 767.9px) {
   .caroussel {
@@ -514,7 +515,7 @@
     flex-direction: column;
   }
   .infosTitleLoc {
-    width: 935px;
+    width: 975px;
     font-size: 36px;
     height: 51px;
     line-height: 52px;
@@ -580,6 +581,7 @@
     display: flex;
     margin: auto;
     margin-top: 2.5%;
+    justify-content: space-between;
   }
   .dropDownLog {
     display: flex;
@@ -625,9 +627,9 @@
   .btnArrowM {
     padding-top: 5px;
   }
-  .rotate {
+  /* .rotate {
     padding-bottom: 5px;
-  }
+  } */
   .flexC {
     display: flex;
     flex-direction: column;
@@ -651,8 +653,8 @@
     padding: 1%;
   }
   .textEquipments {
-    line-height: 10px;
-    font-size: 18px;
+    line-height: 18px;
+    /* font-size: 18px; */
     padding-top: 12px;
   }
   .arrowB,
@@ -668,3 +670,4 @@
     right: 5%;
   }
 }
+

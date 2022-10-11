@@ -1,5 +1,5 @@
 import React from "react";
-import DDabout from "./DDabout";
+import Collapse from "../layout/Collapse";
 
 const Section = () => {
   const dropAbouts = [
@@ -31,7 +31,7 @@ const Section = () => {
 
   return (
     <div>
-      {dropAbouts.map((dropAbout, index) => (
+      {Collapse.map((dropAbout, index) => (
         <DDabout index={index}  dropAbout={dropAbout.text} title={dropAbout.title} />
       ))}
     </div>

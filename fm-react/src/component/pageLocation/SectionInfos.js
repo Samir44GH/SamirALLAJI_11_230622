@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import InfosLogement from "./InfosLogement";
 import Stars from "./Stars";
 import Host from "./Host";
-import DDabout from "../pageAbout/DDabout";
+import Collapse from "../layout/Collapse";
 
 const SectionInfos = (props) => {
   useEffect(() => console.log(props.location));
@@ -23,8 +23,8 @@ const SectionInfos = (props) => {
         </div>
       </div>
       <div className="menuDD">
-       <DDabout title="Description" dropAbout={props.location.description} />
-        <DDabout title="Equipements" dropAbout={appartEqts} />
+       <Collapse title="Description" dropAbout={props.location.description} />
+        <Collapse title="Equipements" dropAbout={appartEqts} />
       </div>
      
     </div>

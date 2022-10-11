@@ -6,31 +6,23 @@ const DDabout = ({ dropAbout, title }) => {
   return (
     <section className="section1">
       <nav className="divBtnArrow">
-        <button className="buttonDropDown contact_button">
-          {title}
-        </button>
+        <button className="buttonDropDown contact_button">{title}</button>
         <span
-          //className="fasa  btnArrow"
           className={activeDD ? " btnArrow  rotate" : "  btnArrow inrotate"}
           aria-hidden="true"
           id="btnSection1a"
-          //onClick={textVisible}
           onClick={(e) => setActiveDD(!activeDD)}
         >
           <img
-            src="http://localhost:3000/SamirALLAJI_11_230622/images/vector.png"
+            src="	http://localhost:3000/SamirALLAJI_11_230622/images/vector.png"
             className="fa-chevron-down"
             alt="flèche dirigée vers le haut"
           />
         </span>
       </nav>
 
-      <article
-        className={activeDD ? " aSection1a aSection1" : "disappear"}
-
-        //className="aSection1a aSection1 disappear"
-      >
-        <p className="textSection">{dropAbout}</p>
+      <article className={activeDD ? " aSection1a aSection1" : "disappear"}>
+        <p className="textSection"> {dropAbout}</p>
       </article>
     </section>
   );

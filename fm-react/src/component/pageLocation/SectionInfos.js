@@ -7,6 +7,11 @@ import DDabout from "../pageAbout/DDabout";
 
 const SectionInfos = (props) => {
   useEffect(() => console.log(props.location));
+  const appartEqts = props.location.equipments?.map((eqmt, index) => (
+    <p className="textSection1 textSectionLog textEquipments" key={index}>
+      {eqmt}
+    </p>
+  ));
 
   return (
     <div className="sectionInfos">
@@ -19,7 +24,7 @@ const SectionInfos = (props) => {
       </div>
       <div className="menuDD">
        <DDabout title="Description" dropAbout={props.location.description} />
-        <DDabout title="Equipements" dropAbout={props.location.equipments} />
+        <DDabout title="Equipements" dropAbout={appartEqts} />
       </div>
      
     </div>
